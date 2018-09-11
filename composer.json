@@ -1,0 +1,19 @@
+{
+    "name": "caffeineinc/silverstripe-sitetree-cache",
+    "description": "Cache sitetree requests so that the CMS can load faster",
+    "keywords": ["silverstripe","Sitetree","performance"],
+    "type": "library",
+    "license": "BSD-3-CLAUSE",
+    "authors": [
+        {
+            "name": "Simon Gow",
+            "email": "simon@silverstripe.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+      "php": ">=7.1",
+      "silverstripe/cms": "^4",
+      "silverstripe/framework": "^4"
+    }
+}
