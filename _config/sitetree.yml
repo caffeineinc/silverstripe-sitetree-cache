@@ -1,0 +1,24 @@
+---
+Name: CacheSiteTreeExtension
+---
+SilverStripe\CMS\Controllers\CMSMain:
+  extensions:
+    - Caffeineinc\SilverStripeSiteTreeCache\CacheSiteTreeExtension
+
+SilverStripe\Core\Injector\Injector:
+  Psr\SimpleCache\CacheInterface.SiteTree_Cache:
+    factory: SilverStripe\Core\Cache\CacheFactory
+    constructor:
+      namespace: "SiteTree_Cache"
+
+
+Caffeineinc\SilverStripeSiteTreeCache\CacheSiteTreeExtension:
+  cache_time: 3600
+
+SilverStripe\CMS\Model\SiteTree:
+  node_threshold_total: 5
+  node_threshold_leaf: 10
+
+SilverStripe\Forms\TreeDropdownField:
+  node_threshold_total: 20
+  node_threshold_leaf: 10

@@ -1,6 +1,0 @@
----
-Name: CacheSiteTreeExtension
----
-SilverStripe\CMS\Controllers\CMSMain:
-  extensions:
-    - CacheSiteTreeExtension
