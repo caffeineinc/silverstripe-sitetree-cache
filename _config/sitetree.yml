@@ -11,9 +11,9 @@ SilverStripe\Core\Injector\Injector:
     constructor:
       namespace: "SiteTree_Cache"
 
-
 Caffeineinc\SilverStripeSiteTreeCache\CacheSiteTreeExtension:
   cache_time: 3600
+  include_member_id: true
 
 SilverStripe\CMS\Model\SiteTree:
   node_threshold_total: 5
